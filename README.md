@@ -1,0 +1,2 @@
+# ObsquraJava
+Practice java project
