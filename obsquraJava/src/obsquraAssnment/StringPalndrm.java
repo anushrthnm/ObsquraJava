@@ -6,7 +6,7 @@ public class StringPalndrm
     {
     	String str1;
     	str1= new StringBuilder(str).reverse().toString();
-    	if(str1.equals(str))
+    	if(str1.equalsIgnoreCase(str))
     	{
     		System.out.println(str+" and "+str1+" are palindromes");
     	}
@@ -19,6 +19,6 @@ public class StringPalndrm
 	public static void main(String[] args) 
 	{
 		StringPalndrm strp=new StringPalndrm();
-		strp.Paindr("malayalam");
+		strp.Paindr("Malayalam");
 	}
 }
