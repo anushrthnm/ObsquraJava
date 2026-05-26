@@ -1,19 +1,14 @@
 package obsquraAssnment;
 
-public class HRACalc 
+public class HRACalc extends GetSalary
 {
-
-	public static int calcHRA(int basic)
+    double hra;
+    double pf;
+    
+	public void getCalc()
 	{
-		int hra;
+		super.getSalary();
 		hra= (basic*5)/100;
-		return hra;		
-	}
-	
-	public static int calcPF(int basic)
-	{
-		int pf;
 		pf= (basic*20)/100;
-		return pf;		
 	}
 }

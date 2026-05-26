@@ -1,12 +1,27 @@
 package obsquraAssnment;
 
+import java.util.Scanner;
+
 public class SalCalc extends HRACalc
 {
 
-	public static int salSlip(int basic, int deduct, int bonus) 
+	public void salSlip() 
 	{
-		int totSal;
-		totSal= basic+calcHRA(basic)+calcPF(basic)+bonus-deduct;
-		return totSal;
+		double totSal;
+		super.getCalc();
+		totSal= basic+hra-pf-deduct+bonus;
+		System.out.println("Salary Slip");
+		System.out.println("Basic"+basic);
+		System.out.println("HRA"+hra);
+		System.out.println("PF"+pf);
+		System.out.println("Deduct"+deduct);
+		System.out.println("Bonus"+bonus);
+		System.out.println("Total Salary"+totSal);
+	}
+	
+	public static void main(String[] args)
+	{
+		SalCalc sc= new SalCalc();
+		sc.salSlip();
 	}
 }
